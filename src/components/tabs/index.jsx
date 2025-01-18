@@ -8,8 +8,8 @@ export default function Tabs() {
     const {navItems, activeItem, setActiveItem} = useContext(TabContext);
 
     return (
-        <nav className="w-full overflow-x-auto flex justify-start sm:justify-center items-center px-2 sm:px-4 lg:px-8">
-            <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8 min-w-max">
+        <nav className="w-full overflow-x-auto flex justify-start sm:justify-center items-center px-2 sm:px-4 lg:px-8 ">
+            <div className="flex items-center gap-2 flex-wrap">
                 {navItems.map((item) => (
                     <a
                         key={item.name}
