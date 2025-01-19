@@ -67,24 +67,24 @@ export default function Header() {
                         <AiOutlineClose size={30} />
                     </div>
                     <ul className='p-4 pt-10 flex flex-col gap-5 w-full'>
-                        <Link to="/">
+                        <Link onClick={handleNav} to="/">
                             Events
                         </Link>
-                        <Link to="/">
+                        <Link onClick={handleNav} to="/portfolio">
                             Members
                         </Link>
-                        <Link to="/">
+                        <Link onClick={handleNav} to="/">
                             Blogs
                         </Link>
-                        <hr className="border-secondary" />
-                        <Link to="/">
+                        <hr className="border-tertiary" />
+                        <Link onClick={handleNav} to="/photo-reels">
                             <div className="flex items-center gap-2">
                                 <FiCamera size={20} />
                                 <p>Photo Reel</p>
                             </div>
                         </Link>
-                        <hr className="border-secondary" />
-                        <div className="flex items-center gap-2">
+                        <hr className="border-tertiary" />
+                        <div onClick={handleNav} className="flex items-center gap-2">
                             <FaRegUser className="w-[17px] h-[17px]" />
                             <p>Club Member</p>
                         </div>

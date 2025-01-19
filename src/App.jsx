@@ -12,15 +12,17 @@ export default function App() {
 	return (
 		<div>
 			<ThemeProvider>
-				<Header />
-				<div className="pt-[65px]">
-					<Routes>
-						<Route path="/" element={<HomePage />} />
-						<Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/photo-reels" element={<PhotoReels/>}/>
-					</Routes>
+				<div className="bg-complementPrimary">
+					<Header />
+					<div className="pt-[65px]">
+						<Routes>
+							<Route path="/" element={<HomePage />} />
+							<Route path="/portfolio" element={<PortfolioPage />} />
+							<Route path="/photo-reels" element={<PhotoReels />} />
+						</Routes>
+					</div>
+					<Footer />
 				</div>
-				<Footer />
 			</ThemeProvider>
 		</div>
 	)

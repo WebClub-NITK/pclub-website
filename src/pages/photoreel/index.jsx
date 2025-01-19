@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
 import Photos from '../../components/photoReels/Photos';
 import Reels from '../../components/photoReels/Reels';
@@ -11,7 +11,7 @@ const PhotoReels = () => {
   const renderTabContent = () => {
     if (activeTab === 'Photos') {
       return (
-        <Photos/>
+        <Photos />
       );
     }
     return <Reels />;
@@ -23,7 +23,7 @@ const PhotoReels = () => {
       <h1 className="text-2xl font-bold text-center mb-4">Photo Reels</h1>
 
       {/* Tabs Section */}
-      <Tab activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
 
       {/* Tab Content */}
       <div className="col-span-4">{renderTabContent()}</div>
